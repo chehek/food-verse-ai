@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8f4" />
+    <meta name="description" content="Sign in to Food Verse AI for cooking ideas, nutrition planning, and your food preferences." />
+    <title>Log in — Food Verse AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <section class="login-showcase" aria-label="Food Verse AI features">
+        <a class="login-brand" href="index.html" aria-label="Food Verse AI home">
+          <span class="brand-mark" aria-hidden="true">fv<span>.</span></span>
+          <span class="brand-name">food verse<span>AI</span></span>
+        </a>
+
+        <div class="login-intro">
+          <p class="login-eyebrow">A FRESHER WAY TO EAT WELL</p>
+          <h1>Your kitchen,<br />a little more inspired.</h1>
+          <p>Sign in to make everyday food choices feel simpler, smarter, and more personal.</p>
+        </div>
+
+        <div class="login-features">
+          <article class="login-feature">
+            <span class="login-feature-icon" aria-hidden="true">✳</span>
+            <div><h2>Cooking Assistant</h2><p>Find ideas and make something delicious with what you have.</p></div>
+          </article>
+          <article class="login-feature">
+            <span class="login-feature-icon" aria-hidden="true">▦</span>
+            <div><h2>Nutrition Planner</h2><p>Build flexible meal plans that fit your day and goals.</p></div>
+          </article>
+          <article class="login-feature">
+            <span class="login-feature-icon" aria-hidden="true">♡</span>
+            <div><h2>Profile &amp; Preferences</h2><p>Keep your food preferences and personal settings together.</p></div>
+          </article>
+        </div>
+
+        <footer>Food Verse AI <span class="footer-heart">♥</span> food, made thoughtful.</footer>
+      </section>
+
+      <section class="login-form-side" aria-labelledby="login-title">
+        <div class="login-form-wrap">
+          <a class="login-brand login-mobile-brand" href="index.html" aria-label="Food Verse AI home">
+            <span class="brand-mark" aria-hidden="true">fv<span>.</span></span>
+            <span class="brand-name">food verse<span>AI</span></span>
+          </a>
+          <p class="eyebrow">WELCOME BACK</p>
+          <h2 id="login-title">Log in to your account</h2>
+          <p class="login-subtitle">Pick up where you left off and make today a little more delicious.</p>
+          <form class="login-form" id="login-form">
+            <label class="login-field" for="login-email">
+              Email address
+              <input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </label>
+            <label class="login-field" for="login-password">
+              Password
+              <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required />
+            </label>
+            <div class="login-options">
+              <label class="remember-option"><input type="checkbox" name="remember" /> Remember me</label>
+              <span class="login-help">Need help signing in?</span>
+            </div>
+            <button class="login-submit" type="submit">Log in</button>
+            <p class="login-notice" id="login-notice" role="status" aria-live="polite"></p>
+          </form>
+          <div class="login-divider">YOUR FOOD JOURNEY STARTS HERE</div>
+          <a class="dashboard-return" href="index.html">Continue to the dashboard <span aria-hidden="true">→</span></a>
+          <p class="login-disclaimer">This is a front-end demo. Account verification is not connected yet, and your sign-in details are not sent or stored.</p>
+        </div>
+      </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>
